@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.cart-container {
+    margin: 20px auto;
+    max-width: 1000px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Tổng giá */
+.total {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Phần chọn phương thức vận chuyển */
+.shipping-method {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.shipping-method label {
+    margin: 0 15px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.shipping-method input {
+    margin-right: 10px;
+}
+
+/* Nút thanh toán */
+.checkout {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#checkout-btn {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+    background-color: #218838;
+}

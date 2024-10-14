@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    background-color: azure;
+}
+
+.header-2 {
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    display: flex;
+}
+
+.header-2 .logo {
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.header-2 .logo img {
+    height: auto;
+    width: 100px;
+}
+
+
+.nav {
+    align-items: center;
+    background-color: #DC1B26;
+    display: flex;
+}
+
+.nav ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+.nav ul li {
+    background-color: #DC1B26;
+    padding: 16px 10px 16px 10px;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li:hover {
+    cursor: pointer;
+    background-color: brown;
+}
+
+hr {
+    border-color: #DC1B26;
+}
+
+
+.image-slideshow {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.image-slideshow img {
+    width: 100%
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.main-content .chinhsach {
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px gainsboro;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.main-content .chinhsach-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    height: 80%;
+}
+
+h2 {
+    color: #DC1B26;
+}
+
+.main-content #products-list {
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content #products-list .item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px dotted #DC1B26;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.main-content #products-list .item:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px gainsboro;
+}
+
+.main-content #products-list .item img {
+    width: 200px;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    background-color: #DC1B26;
+    height: 80px;
+}
+
+
+.item {
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+
+.icons i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: gray;
+}
+
+.icons i:hover {
+    color: red;
+}
+
+.add-to-cart {
+    display: inline-block;
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: chocolate;
+}
+
+
+.flash-sale {
+    position: absolute;
+    top: 15px;
+
+    left: 10px;
+
+    background-color: red;
+
+    color: white;
+
+    padding: 5px 10px;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    display: none;
+
+}
+
+.countdown {
+    position: absolute;
+
+    top: 0px;
+
+    right: 10px;
+
+    background-color: darkslategray;
+
+    color: white;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    display: block;
+
+}
+
+.item {
+    position: relative;
+    /* Để flash sale và countdown nằm ở vị trí tuyệt đối trong item */
+    margin: 20px;
+    /* Khoảng cách giữa các sản phẩm */
+    border: 1px solid #ccc;
+    /* Đường viền cho sản phẩm */
+    border-radius: 5px;
+    /* Bo góc cho sản phẩm */
+    overflow: hidden;
+    /* Ẩn các phần thừa */
+    text-align: center;
+    /* Canh giữa nội dung */
+}

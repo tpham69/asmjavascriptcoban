@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="style/cart_style.css">
+    <link rel="stylesheet" href="style/trangchu_style.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <img src="imgs/banner_header_top.webp" alt="" style="width: 100%;">
+    <div class="header-2">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="" style="width: 15%;">
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="trangchu.html">TRANG CHỦ</a></li>
+            <li><a href="cart.html">GIỎ HÀNG</a></li>
+            <li><a href="login.html">ĐĂNG XUẤT</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="title">
+        <h1>Giỏ Hàng</h1>
+    </div>
+    <div class="cart-container">
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Ảnh</th>
+                    <th>Sản Phẩm</th>
+                    <th>Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Sản phẩm sẽ được thêm vào đây -->
+            </tbody>
+        </table>
+        <div class="payout">
+            <div class="shipping-method">
+                <label>
+                    <input type="radio" name="shipping" value="noithanh" checked> Nội thành (Miễn phí)
+                </label>
+                <label>
+                    <input type="radio" name="shipping" value="ngoaithanh"> Ngoại thành (+50,000 VND)
+                </label>
+            </div>
+
+            <div class="total">
+                <h2>Tổng Giá: <span id="total-price">0</span> VND</h2>
+            </div>
+        </div>
+
+
+        <div class="checkout">
+            <button id="checkout-btn">Thanh Toán</button>
+        </div>
+    </div>
+
+
+    <script src="js/cart_script.js"></script>
+</body>
+
+<footer>
+    C5SHOP Số 123 Đường Phan Chu Trinh, Quận 10, TP.HCM <br>
+    Điện thoại: 0123.456.789 <br>
+    Email: c5shop@gmail.com <br>
+</footer>
+
+</html>
